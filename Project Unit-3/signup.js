@@ -52,3 +52,9 @@ function userDataSubmit() {
 var cartproduct = JSON.parse(localStorage.getItem("cartList")) || [];
 var len=document.querySelector("#cart-len");
 len.innerText=cartproduct.length;
+
+
+ 
+
+ 
+

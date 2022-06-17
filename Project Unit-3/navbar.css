@@ -87,6 +87,7 @@ body {
 }
 
 #footer{
+  
     display: grid;
     grid-template-columns: repeat(6,16%);
     color: rgb(17, 16, 16);

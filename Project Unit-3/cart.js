@@ -1,6 +1,6 @@
-document.querySelector("#sum_value").innerText=localStorage.getItem("sumvalue");
+// document.querySelector("#sum_value").innerText=localStorage.getItem("sumvalue");
 var sum = 0
-var product_array = JSON.parse(localStorage.getItem("product_key"))
+var product_array = JSON.parse(localStorage.getItem("Selected_Items"))
   
 product_array.forEach(function (ele,index){
  var dibba= document.createElement("div")
@@ -17,7 +17,7 @@ chota.setAttribute("class","box1")
  var price1=document.createElement("p")
  price1.innerText=ele.price
   
- sum=sum+ele.price
+ 
  localStorage.setItem("sumvalue",sum)
 
 
@@ -63,8 +63,8 @@ dibba.append(photo,name,chota,del,pro)
 document.querySelector("#cart").append(dibba)
 
 function dellrow(ele,index){
- womencart.splice(index,1)
- localStorage.setItem("product_key",JSON.stringify(product_array))
+ product_array.splice(index,1)
+ localStorage.setItem("Selected_Items",JSON.stringify(product_array))
  window.location.reload();
 }
 
@@ -72,4 +72,13 @@ function checkout(ele,index){
 window.location.href="payment.html"
 }
 
+
+sum+=ele.price;
+
+document.getElementById("sum_value").innerHTML=sum;
 })
+
+
+import { navbar } from "./navbar.js";
+
+document.getElementById("navbar").innerHTML=navbar();

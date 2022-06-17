@@ -41,3 +41,7 @@ var Email = document.querySelector("#email").value;
 var cartproduct = JSON.parse(localStorage.getItem("cartList")) || [];
 var len=document.querySelector("#cart-len");
 len.innerText=cartproduct.length;
+
+
+// --------navbar--------------
+ 

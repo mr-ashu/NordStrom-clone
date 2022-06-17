@@ -1,6 +1,6 @@
 
 var productContainer=document.querySelectorAll('.product-container');
-var nxtBtn=document.querySelectorAll( '.next-btn');
+var nxtBtn=document.querySelectorAll( '.nxt-btn');
 var preBtn=document.querySelectorAll( '.pre-btn');
 
 
@@ -19,13 +19,7 @@ productContainer.forEach((item,i)=>{
 
 
 
-// const imageArr = ["https://n.nordstrommedia.com/id/30f4a509-58fe-483f-b861-2fef342c6441.jpeg?h=622&w=1608" ,
-                    
-// "https://n.nordstrommedia.com/id/5a88520e-8ee7-4cf0-829d-3d833b0a9af2.jpeg?h=622&w=1608",
-//  "https://n.nordstrommedia.com/id/ae19312f-ca77-4db9-94ee-658516ba458c.jpeg?h=622&w=1608",
-
-
-// ]
+ 
 let i = 0;
 function init() {
 
@@ -98,7 +92,7 @@ nextBtn.addEventListener("click",()=>{
 
 });
 
-//image slider previous button
+// //image slider previous button
 
 prevBtn.addEventListener("click",()=>{
 
@@ -227,89 +221,34 @@ nextBtn1.addEventListener("click",()=>{
 
 });
 
-//image slider previous button
-
-prevBtn.addEventListener("click",()=>{
-
-slides1.forEach((slide1)=>{
-    
-    slide1.classList.remove("active");
-  });
-
-  slideIcons1.forEach((slideIcon1)=>{
-    
-    slideIcon1.classList.remove("active");
-  });
-
-
-
-
-
-slideNumber--;
-
-if(slideNumber < 0){
-
-    slideNumber=numberOfSlides-1;
-}
-
-slides1[slideNumber].classList.add("active");
-slideIcons1[slideNumber].classList.add("active");
-
-
-});
-
-
-//image slider autoplay
-
-var playslider;
-
-var repeater=() =>{
-    playslider= setInterval(function(){
-        slides1.forEach((slide1)=>{
-        
-        slide1.classList.remove("active");
-      });
-
-      slideIcons1.forEach((slideIcon1)=>{
-        
-        slideIcon1.classList.remove("active");
-      });
-
-
-
-
-
-    slideNumber++;
-
-    if(slideNumber > (numberOfSlides-1)){
-
-        slideNumber=0;
-    }
+// //image slider previous button
  
-    slides1[slideNumber].classList.add("active");
-    slideIcons1[slideNumber].classList.add("active");
-    
-},1000)
-}
 
-repeater();
+
+
+ 
+
+// //image slider autoplay
+ 
+
+
+ 
 
 //stop the image slider autoplay on mouseover
+ 
 
-slider1.addEventListener("mouseover",()=>{
+// --------navbar--------------
 
-    clearInterval(playslider)
-});
+import { navbar } from "./navbar.js";
 
-
-slider1.addEventListener("mouseout",()=>{
-
-    repeater();
-});
+document.getElementById("navbar").innerHTML=navbar();
 
 
+//----------footer--------------
 
+import {footer} from "./footer.js"
 
+document.getElementById("bottom").innerHTML=footer()
 
 
 

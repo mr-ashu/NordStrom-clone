@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nordstrom</title>
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+ 
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel = "icon" href = 
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAicsdPJDcZp1DvnpaS6zb_1YzjIzlB4qAOQ&usqp=CAU" 
         type = "image/x-icon">
-    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    <link rel="stylesheet" href="./index1.css">
 </head>
-
 <body>
-     
+        
     <div id="container">
         <div id="headnav">
             <h1><a href="index.html">NORDSTROM</a></h1>
@@ -42,7 +42,7 @@
                 </li>
             </ul>
             <div id="cartlogo">
-                <a href="cart.html" id="cart-len">0</a>
+                <a href="cart.html">Cart</a>
             </div>
             
         </div>
@@ -1004,75 +1004,134 @@
                 </div>
             </li>
         </ul>
-        <div id="footer">
+     
+    <!-- navbar end -->
+        <div id="container1">
+        <h2>Create Account</h2>
+        <div class="commonDiv">
             <div>
-                <h5 class="FH"><b>Customer <br>Service</b></h5>
-                <p><a href="https://www.nordstrom.com/browse/customer-service?origin=footer&cm_sp=corp-_-corp_CustomerService-_-globalfooternav_contactus">Contact</a></p>
-                <p><a href="https://www.nordstrom.com/signin/order-lookup">order status</a></p>
-                <p>Shipping</p>
-                <p>Return Policy & Exchanges</p>
-                <p>price Adjustnent</p>
-                <p>Gift cards</p>
-                <p>FAQ</p>
-                <p>Product Recalls</p>
+                <img src="../images/card.png" alt="">
             </div>
             <div>
-                <h5 class="FH"><b>About Us</b></h5>
-                <p>Carees</p>
-                <p>Cprporate social Responsibility</p>
-                <p>Diversity Inclusion & <br> Belonging</p>
-                <p>Get email Updates</p>
-                <p>Nordstrom Blog</p>
-                <p>Nordy Podcast</p>
+                <p>Check out faster</p>
+            </div>
+            
+        </div>
+        <div class="commonDiv">
+            <div>
+                <img src="../images/delivery-truck.png" alt="">
             </div>
             <div>
-                <h5 class="FH"><b>Store & <br>services</b></h5>
-                <p>Find a store</p>
-                <p>free style help</p>
-                <p>Alterations & Tailoring</p>
-                <p>Trunk Club</p>
-                <p>Pop-in-shop</p>
-                <p>Virtual Events</p>
-                <p>Spa Nordstrom</p>
-                <p>Nordstrom  Resturant</p>
-                <p>Nordstrom Local</p>
+                <p>Track orders easily</p>
+            </div>
+            
+        </div>
+        <div class="commonDiv">
+            <div>
+                <img src="../images/cloud.png" alt="">
             </div>
             <div>
-                <h5 class="FH"><b>Nordstrom Card <br>& Reward</b></h5>
-                <p>The Nordy Club Rewards</p>
-                <p>pay my bill</p>
-                <p>Manage My<br>Nordstrom Card</p>
+                <p>Use one sign-in across our brands</p>
+            </div>
+        </div>
+        <p><span>*</span> Required</p>
+        <h5>Email</h5>
+        <div id="showEmail">
+            <div>
+                <p id="emailPara">userEmail </p>
+            </div>
+
+            <div>
+                <a href="signin.html">Edit</a>
+            </div>
+        </div>
+
+        <form action="" id="userDataForm">
+            <h5>First name<span>*</span></h5>
+            <input type="text" id="firstName">
+            <h5>Last name<span>*</span></h5>
+            <input type="text" id="lastName">
+            <h5>Create password<span>*</span></h5>
+            <input type="password" id="password"><span id="showPs">Show </span>
+            <br>
+            <p>By tapping Next, you agree to our <a href="">Privacy Policy</a> and <a href="">Terms & Conditions.</a> </p> 
+            <input type="submit" value="Create Account" id="submit" />
+        </form>
+    </div>
+        <!-- footer start -->
+    <div id="footer">
+        <div>
+            <h5 class="FH"><b>Customer <br>Service</b></h5>
+            <p><a href="https://www.nordstrom.com/browse/customer-service?origin=footer&cm_sp=corp-_-corp_CustomerService-_-globalfooternav_contactus">Contact</a></p>
+            <p><a href="https://www.nordstrom.com/signin/order-lookup">order status</a></p>
+            <p>Shipping</p>
+            <p>Return Policy & Exchanges</p>
+            <p>price Adjustnent</p>
+            <p>Gift cards</p>
+            <p>FAQ</p>
+            <p>Product Recalls</p>
+        </div>
+        <div>
+            <h5 class="FH"><b>About Us</b></h5>
+            <p>Carees</p>
+            <p>Cprporate social Responsibility</p>
+            <p>Diversity Inclusion & <br> Belonging</p>
+            <p>Get email Updates</p>
+            <p>Nordstrom Blog</p>
+            <p>Nordy Podcast</p>
+        </div>
+        <div>
+            <h5 class="FH"><b>Store & <br>services</b></h5>
+            <p>Find a store</p>
+            <p>free style help</p>
+            <p>Alterations & Tailoring</p>
+            <p>Trunk Club</p>
+            <p>Pop-in-shop</p>
+            <p>Virtual Events</p>
+            <p>Spa Nordstrom</p>
+            <p>Nordstrom  Resturant</p>
+            <p>Nordstrom Local</p>
+        </div>
+        <div>
+            <h5 class="FH"><b>Nordstrom Card <br>& Reward</b></h5>
+            <p>The Nordy Club Rewards</p>
+            <p>pay my bill</p>
+            <p>Manage My<br>Nordstrom Card</p>
+        </div>
+        <div>
+            <h5 class="FH"><b>Nordstrom, Inc.</b></h5>
+            <p>Nordstrom  Rack</p>
+            <p>Nordstrom canada</p>
+            <p>trunk club</p>
+            <p>Invester Relation</p>
+            <p>Press Releases</p>
+            <p>Nordstrom Media Network</p>
+        </div>
+        <div id="smDiv">
+            <div>
+                <img src="../images/device.png" alt="">
+                <span>Get our apps</span>
             </div>
             <div>
-                <h5 class="FH"><b>Nordstrom, Inc.</b></h5>
-                <p>Nordstrom  Rack</p>
-                <p>Nordstrom canada</p>
-                <p>trunk club</p>
-                <p>Invester Relation</p>
-                <p>Press Releases</p>
-                <p>Nordstrom Media Network</p>
+                <img src="../images/insta.png" alt="">
+                <img src="../images/pinterest.png" alt="">
+                <img src="../images/twitter.png" alt="">
+                <img src="../images/facebook.png" alt="">
+                <img src="../images/plus.png" alt="">
             </div>
-            <div id="smDiv">
-                <div>
-                    <img src="images/device.png" alt="">
-                    <span>Get our apps</span>
-                </div>
-                <div>
-                    <img src="images/insta.png" alt="">
-                    <img src="images/pinterest.png" alt="">
-                    <img src="images/twitter.png" alt="">
-                    <img src="images/facebook.png" alt="">
-                    <img src="images/plus.png" alt="">
-                </div>
-            </div>
-    </div>       
-        <div id="lastLine">
-                <span>Your Privacy Rights</span> 
-                <span>Do Not Sell My Info</span> 
-                <span>Terms & Conditions</span>
-                <span>Interest-Based Ads</span>
-                <span>©2022 Nordstrom, Inc.</span>
-             </div>
-    </body>
-    </html>
-     <script src="index1.js"></script>
+        </div>
+    </div>
+    <div id="lastLine">
+        <span>Your Privacy Rights</span> 
+        <span>Do Not Sell My Info</span> 
+        <span>Terms & Conditions</span>
+        <span>Interest-Based Ads</span>
+        <span>©2022 Nordstrom, Inc.</span>
+    </div>
+    <div id="bottom"></div>
+</body>
+
+
+</html>
+
+<script  src="signup.js"></script>
