@@ -313,6 +313,5 @@ slider1.addEventListener("mouseout",()=>{
 
 
 
-
             
             
